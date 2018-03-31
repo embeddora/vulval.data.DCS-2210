@@ -1,0 +1,20 @@
+mkdir /etc/samba
+echo 10 > /proc/sys/vm/dirty_ratio
+echo 8 > /proc/sys/vm/dirty_background_ratio
+
+#if ! [ -f /lib/iptables/libipt_iprange.so ]; then
+#	/opt/ipnc/fix_iptables
+#fi
+
+chmod 0710 /opt/ipnc/etc/esmtprc
+cp /opt/ipnc/quftprc /etc/quftprc
+cp /opt/ipnc/ushare.conf /mnt/data
+cp /opt/ipnc/etc/ushare.conf /etc
+cp /opt/ipnc/etc/boa.conf /etc
+cp /opt/ipnc/etc/smb.conf /etc/samba
+cp /opt/ipnc/etc/esmtprc /etc
+cd /opt/ipnc
+cp testmail.txt /etc/
+/opt/ipnc/loadmodules.sh
+/opt/ipnc/watchdog &
+

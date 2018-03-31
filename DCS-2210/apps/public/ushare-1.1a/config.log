@@ -1,0 +1,376 @@
+# ./configure --disable-dlna --cross-prefix=arm_v5t_le- --cross-compile --with-libupnp-dir=/usr/local
+BASH=/bin/sh
+BASH_ARGC=([0]="4")
+BASH_ARGV=([0]="--with-libupnp-dir=/usr/local" [1]="--cross-compile" [2]="--cross-prefix=arm_v5t_le-" [3]="--disable-dlna")
+BASH_LINENO=([0]="0")
+BASH_SOURCE=([0]="./configure")
+BASH_VERSINFO=([0]="3" [1]="2" [2]="33" [3]="1" [4]="release" [5]="i386-redhat-linux-gnu")
+BASH_VERSION='3.2.33(1)-release'
+CCACHE_DIR=/var/cache/ccache
+CCACHE_UMASK=002
+COLORTERM=gnome-terminal
+CONFIGFILE=config.mak
+CONFIG_H=config.h
+CVS_RSH=ssh
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-wH7pyqvZsQ,guid=815107ab4b7a20a2e3d9d6ca4918740b
+DESKTOP_SESSION=gnome
+DESKTOP_STARTUP_ID=
+DIRSTACK=()
+DISPLAY=:0.0
+EUID=0
+GDMSESSION=gnome
+GDM_LANG=zh_TW.UTF-8
+GNOME_DESKTOP_SESSION_ID=Default
+GNOME_KEYRING_PID=2183
+GNOME_KEYRING_SOCKET=/tmp/keyring-qaNLFO/socket
+GROUPS=()
+GTK_MODULES=gnomebreakpad
+GTK_RC_FILES=/etc/gtk/gtkrc:/root/.gtkrc-1.2-gnome2
+G_BROKEN_FILENAMES=1
+HISTSIZE=1000
+HOME=/root
+HOSTNAME=mike
+HOSTTYPE=i386
+IFS=' 	
+'
+INPUTRC=/etc/inputrc
+INSTALL='/usr/bin/install -c'
+KDEDIRS=/usr
+KDE_IS_PRELINKED=1
+LANG=zh_TW.UTF-8
+LESSOPEN='|/usr/bin/lesspipe.sh %s'
+LOGNAME=root
+LS_COLORS='no=00:fi=00:di=00;34:ln=00;36:pi=40;33:so=00;35:do=00;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:tw=30;42:ow=34;42:st=37;44:ex=00;32:*.cmd=00;32:*.exe=00;32:*.com=00;32:*.btm=00;32:*.bat=00;32:*.sh=00;32:*.csh=00;32:*.tar=00;31:*.tgz=00;31:*.svgz=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.lzma=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.dz=00;31:*.gz=00;31:*.bz2=00;31:*.tbz2=00;31:*.bz=00;31:*.tz=00;31:*.deb=00;31:*.rpm=00;31:*.jar=00;31:*.rar=00;31:*.ace=00;31:*.zoo=00;31:*.cpio=00;31:*.7z=00;31:*.rz=00;31:*.jpg=00;35:*.jpeg=00;35:*.gif=00;35:*.bmp=00;35:*.pbm=00;35:*.pgm=00;35:*.ppm=00;35:*.tga=00;35:*.xbm=00;35:*.xpm=00;35:*.tif=00;35:*.tiff=00;35:*.png=00;35:*.mng=00;35:*.pcx=00;35:*.mov=00;35:*.mpg=00;35:*.mpeg=00;35:*.m2v=00;35:*.mkv=00;35:*.ogm=00;35:*.mp4=00;35:*.m4v=00;35:*.mp4v=00;35:*.vob=00;35:*.qt=00;35:*.nuv=00;35:*.wmv=00;35:*.asf=00;35:*.rm=00;35:*.rmvb=00;35:*.flc=00;35:*.avi=00;35:*.fli=00;35:*.gl=00;35:*.dl=00;35:*.xcf=00;35:*.xwd=00;35:*.yuv=00;35:*.svg=00;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:'
+MACHTYPE=i386-redhat-linux-gnu
+MAIL=/var/spool/mail/root
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/opt/mv_pro_4.0.1/montavista/pro/devkit/arm/v5t_le/bin:/opt/mv_pro_4.0.1/montavista/pro/bin:/opt/mv_pro_4.0.1/montavista/common/bin:/usr/lib/qt-3.3/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/lib/ccache:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/root/bin
+PIPESTATUS=([0]="0")
+POSIXLY_CORRECT=y
+PPID=23523
+PREFIX=/usr/local
+PS4='+ '
+PWD=/root/workdir/ushare-1.1a
+QTDIR=/usr/lib/qt-3.3
+QTINC=/usr/lib/qt-3.3/include
+QTLIB=/usr/lib/qt-3.3/lib
+QT_PLUGIN_PATH=/usr/lib/kde4/plugins
+RANDOM=27991
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2184,unix/unix:/tmp/.ICE-unix/2184
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments:posix
+SHLVL=3
+SSH_AGENT_PID=2199
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AUTH_SOCK=/tmp/keyring-qaNLFO/ssh
+TERM=xterm
+TMPC=/tmp/ushare-5992-31719-4347.c
+TMPDIR1=/tmp
+TMPE=/tmp/ushare-19791-31719-16020
+TMPO=/tmp/ushare-31647-31719-15310.o
+TMPS=/tmp/ushare-28408-31719-27991.S
+UID=0
+USER=root
+VERSION=1.1a
+WINDOWID=60903467
+XAUTHORITY=/var/run/gdm/auth-cookie-XXTXMAKU-for-root
+XDG_SESSION_COOKIE=65d637c665c8511ed41e542d490eecf9-1226339337.932182-523989399
+_=--with-libupnp-dir=/usr/local
+bindir='${PREFIX}/bin'
+cc=arm_v5t_le-gcc
+cpu=x86
+cross_compile=yes
+cross_prefix=arm_v5t_le-
+debug=no
+dlna=no
+dostrip=yes
+extralibs=
+installstrip=-s
+libupnpdir=/usr/local
+localedir='${PREFIX}/share/locale'
+logfile=config.log
+logging=yes
+make=make
+nls=yes
+opt=--with-libupnp-dir=/usr/local
+optimize=yes
+optval=/usr/local
+strip=arm_v5t_le-strip
+sysconfdir='${PREFIX}/etc'
+system_name=Linux
+Checking for compiler available...
+check_ld
+check_cc
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	int main(){
+     2	    return 0;
+     3	}
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -o /tmp/ushare-19791-31719-16020 /tmp/ushare-31647-31719-15310.o
+check_header altivec.h
+check_cpp
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	#include <altivec.h>
+     2	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -E -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+/tmp/ushare-5992-31719-4347.c:1:21: altivec.h: 沒有此一檔案或目錄
+check_cc -msse
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	#include <xmmintrin.h>
+     2	int main(void) {
+     3	#if __GNUC__ > 3 || (__GNUC__ == 3 && __GNUC_MINOR__ >= 2)
+     4	return 0;
+     5	#else
+     6	#error no vector builtins
+     7	#endif
+     8	}
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -msse -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+cc1: error: invalid option `sse'
+check_cc -march=athlon
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	#include <mm3dnow.h>
+     2	int main(void) {
+     3	__m64 b1;
+     4	b1 = _m_pswapd(b1);
+     5	_m_femms();
+     6	return 0;
+     7	}
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -march=athlon -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+/tmp/ushare-5992-31719-4347.c:1: error: bad value (athlon) for -march= switch
+check_cflags -W
+check_cc -W
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_cflags -Wall
+check_cc -Wall
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_cflags -D_LARGEFILE_SOURCE
+check_cc -D_LARGEFILE_SOURCE
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_cflags -D_FILE_OFFSET_BITS=64
+check_cc -D_FILE_OFFSET_BITS=64
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_cflags -D_REENTRANT
+check_cc -D_REENTRANT
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+Checking for locales ...
+check_header locale.h
+check_cpp
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	#include <locale.h>
+     2	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -E -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_lib locale.h setlocale 
+check_header locale.h
+check_cpp
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	#include <locale.h>
+     2	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -E -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_func setlocale
+check_ld
+check_cc
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	extern int setlocale();
+     2	int main(){
+     3	    setlocale();
+     4	    return 0;
+     5	}
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -o /tmp/ushare-19791-31719-16020 /tmp/ushare-31647-31719-15310.o
+Checking for ifaddrs ...
+check_lib ifaddrs.h getifaddrs 
+check_header ifaddrs.h
+check_cpp
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	#include <ifaddrs.h>
+     2	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -E -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_func getifaddrs
+check_ld
+check_cc
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	extern int getifaddrs();
+     2	int main(){
+     3	    getifaddrs();
+     4	    return 0;
+     5	}
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -o /tmp/ushare-19791-31719-16020 /tmp/ushare-31647-31719-15310.o
+Checking for langinfo ...
+check_header langinfo.h
+check_cpp
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	#include <langinfo.h>
+     2	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -E -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_lib langinfo.h nl_langinfo 
+check_header langinfo.h
+check_cpp
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	#include <langinfo.h>
+     2	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -E -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_func nl_langinfo
+check_ld
+check_cc
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	extern int nl_langinfo();
+     2	int main(){
+     3	    nl_langinfo();
+     4	    return 0;
+     5	}
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -o /tmp/ushare-19791-31719-16020 /tmp/ushare-31647-31719-15310.o
+Checking for iconv ...
+check_lib iconv.h iconv 
+check_header iconv.h
+check_cpp
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	#include <iconv.h>
+     2	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -DHAVE_LANGINFO_CODESET -E -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_func iconv
+check_ld
+check_cc
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	extern int iconv();
+     2	int main(){
+     3	    iconv();
+     4	    return 0;
+     5	}
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -DHAVE_LANGINFO_CODESET -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -o /tmp/ushare-19791-31719-16020 /tmp/ushare-31647-31719-15310.o
+check_cflags -I/usr/local
+check_cc -I/usr/local
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -DHAVE_LANGINFO_CODESET -DHAVE_ICONV -I/usr/local -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_ldflags -L/usr/local
+check_ld -L/usr/local
+check_cc
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	int main(){
+     2	    return 0;
+     3	}
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -DHAVE_LANGINFO_CODESET -DHAVE_ICONV -I/usr/local -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -L/usr/local -o /tmp/ushare-19791-31719-16020 /tmp/ushare-31647-31719-15310.o
+Checking for libixml ...
+check_lib upnp/ixml.h ixmlRelaxParser -lixml
+check_header upnp/ixml.h
+check_cpp
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	#include <upnp/ixml.h>
+     2	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -DHAVE_LANGINFO_CODESET -DHAVE_ICONV -I/usr/local -E -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_func ixmlRelaxParser
+check_ld
+check_cc
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	extern int ixmlRelaxParser();
+     2	int main(){
+     3	    ixmlRelaxParser();
+     4	    return 0;
+     5	}
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -DHAVE_LANGINFO_CODESET -DHAVE_ICONV -I/usr/local -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -L/usr/local -o /tmp/ushare-19791-31719-16020 /tmp/ushare-31647-31719-15310.o -lixml
+Checking for libthreadutil ...
+check_lib upnp/ThreadPool.h ThreadPoolAdd -lthreadutil -lpthread
+check_header upnp/ThreadPool.h
+check_cpp
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	#include <upnp/ThreadPool.h>
+     2	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -DHAVE_LANGINFO_CODESET -DHAVE_ICONV -I/usr/local -E -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_func ThreadPoolAdd
+check_ld
+check_cc
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	extern int ThreadPoolAdd();
+     2	int main(){
+     3	    ThreadPoolAdd();
+     4	    return 0;
+     5	}
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -DHAVE_LANGINFO_CODESET -DHAVE_ICONV -I/usr/local -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -L/usr/local -o /tmp/ushare-19791-31719-16020 /tmp/ushare-31647-31719-15310.o -lixml -lthreadutil -lpthread
+Checking for libupnp >= 1.4.2 ...
+check_lib upnp/upnp.h UpnpSetMaxContentLength -lupnp
+check_header upnp/upnp.h
+check_cpp
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	#include <upnp/upnp.h>
+     2	int x;
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -DHAVE_LANGINFO_CODESET -DHAVE_ICONV -I/usr/local -E -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+check_func UpnpSetMaxContentLength
+check_ld
+check_cc
+BEGIN /tmp/ushare-5992-31719-4347.c
+     1	extern int UpnpSetMaxContentLength();
+     2	int main(){
+     3	    UpnpSetMaxContentLength();
+     4	    return 0;
+     5	}
+END /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -DHAVE_LANGINFO_CODESET -DHAVE_ICONV -I/usr/local -c -o /tmp/ushare-31647-31719-15310.o /tmp/ushare-5992-31719-4347.c
+arm_v5t_le-gcc -L/usr/local -o /tmp/ushare-19791-31719-16020 /tmp/ushare-31647-31719-15310.o -lixml -lthreadutil -lpthread -lupnp
+
+uShare: configure is OK
+  version            1.1a
+  using libupnp      
+configuration:
+  install prefix     /usr/local
+  configuration dir  ${PREFIX}/etc
+  locales dir        ${PREFIX}/share/locale
+  NLS support        yes
+  DLNA support       no
+  C compiler         arm_v5t_le-gcc
+  STRIP              arm_v5t_le-strip
+  make               make
+  CPU                x86 ()
+  debug symbols      no
+  strip symbols      yes
+  optimize           yes
+
+  CFLAGS              -I.. -W -Wall -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -D_REENTRANT -D_GNU_SOURCE -O3 -DHAVE_LOCALE_H -DHAVE_SETLOCALE -DHAVE_IFADDRS_H -DHAVE_LANGINFO_H -DHAVE_LANGINFO_CODESET -DHAVE_ICONV -I/usr/local
+  LDFLAGS             -L/usr/local
+  extralibs           -lixml -lthreadutil -lpthread -lupnp
+
+Creating config.mak ...
+Creating config.h ...

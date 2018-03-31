@@ -1,0 +1,18 @@
+mkdir /lib/iptables
+mkdir /etc/samba
+mkdir /mnt/smb/fs1 /mnt/smb/fs2 /mnt/smb/fs3 /mnt/smb/fs4 /mnt/smb/fs5
+ln -s /opt/ipnc/lib/libipt_iprange.so /lib/iptables/libipt_iprange.so
+ln -s /opt/ipnc/lib/libipt_standard.so /lib/iptables/libipt_standard.so
+ln -s /opt/ipnc/iptables /sbin/iptables
+
+chmod 0710 /opt/ipnc/etc/esmtprc
+cp /opt/ipnc/quftprc /etc/quftprc
+cp /opt/ipnc/ushare.conf /mnt/data
+cp /opt/ipnc/etc/ushare.conf /etc
+cp /opt/ipnc/etc/boa.conf /etc
+cp /opt/ipnc/etc/smb.conf /etc/samba
+cp /opt/ipnc/etc/esmtprc /etc
+cd /opt/ipnc
+cp testmail.txt /etc/
+/opt/ipnc/loadmodules.sh
+/opt/ipnc/watchdog &

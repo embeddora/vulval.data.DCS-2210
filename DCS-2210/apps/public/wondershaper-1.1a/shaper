@@ -1,0 +1,40 @@
+#!/bin/sh
+
+DEV=$1
+DOWNLINK=$2
+UPLINK=$3
+
+# clean existing down- and uplink qdiscs, hide errors
+tc qdisc del dev $DEV root    2> /dev/null > /dev/null
+tc qdisc del dev $DEV ingress 2> /dev/null > /dev/null
+
+if [ "$1" = "0" ] && [ "$2" = "0" ];
+then
+	tc qdisc del dev $DEV root
+	echo "shaper stop."
+	exit
+fi
+
+if [ "$2" = "0" ]
+then
+	DOWNLINK=100000
+fi
+
+if [ "$3" = "0" ]
+then
+	UPLINK=100000
+fi
+
+
+# delete previous root node
+tc qdisc del dev $DEV root
+# create root node
+tc qdisc add dev $DEV root handle 1: htb default 11
+# create LINK class
+tc class add dev $DEV parent 1: classid 1:1 htb rate ${UPLINK}kbit ceil ${UPLINK}kbit
+# create our HTTP shaping class
+tc class add dev $DEV parent 1:1 classid 1:10 htb rate ${DOWNLINK}kbit ceil ${DOWNLINK}kbit
+# create our REST class for unutilized bandwidth
+tc class add dev $DEV parent 1:1 classid 1:11 htb rate ${UPLINK}kbit ceil ${UPLINK}kbit
+# create the filter for the HTTP class, we filter on source port 80 (http)
+#tc filter add dev $DEV protocol ip parent 1:0 prio 1 u32 match ip sport 80 0xffff flowid 1:10

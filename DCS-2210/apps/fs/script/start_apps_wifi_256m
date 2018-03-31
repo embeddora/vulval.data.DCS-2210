@@ -1,0 +1,29 @@
+#! /bin/sh
+echo 10 > /proc/sys/vm/dirty_ratio
+echo 8 > /proc/sys/vm/dirty_background_ratio
+#echo 100 > /proc/sys/vm/dirty_writeback_centisecs 
+#echo 0 > /proc/sys/vm/dirty_expire_centisecs
+
+cd /opt/ipnc
+read -r wifimac < /proc/appro/get_mac0
+read -r wifichnplan < /proc/appro/channel_plan
+if [ -n "$wifimac" ]; then
+insmod 8192cu.ko rtw_initmac=$wifimac rtw_channel_plan=$wifichnplan
+else
+insmod 8192cu.ko rtw_channel_plan=$wifichnplan
+fi
+
+mkdir -p /etc/samba
+chmod 0710 /opt/ipnc/etc/esmtprc
+cp /opt/ipnc/quftprc /etc/quftprc
+cp /opt/ipnc/ushare.conf /mnt/data
+cp /opt/ipnc/etc/ushare.conf /etc
+cp /opt/ipnc/etc/boa.conf /etc
+cp /opt/ipnc/etc/smb.conf /etc/samba
+cp /opt/ipnc/etc/esmtprc /etc
+cp /opt/ipnc/etc/wpa_supplicant.conf /etc
+cp /opt/ipnc/etc/ppp/* /etc/ppp
+cp testmail.txt /etc/
+/opt/ipnc/loadmodules.sh
+/opt/ipnc/wpa_supplicant -Dwext -iwlan0 -c/etc/wpa_supplicant.conf -B
+/opt/ipnc/watchdog &

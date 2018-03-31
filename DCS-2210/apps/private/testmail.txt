@@ -1,0 +1,7 @@
+To: TEST
+Subject: D-Link test mail
+Content-Type:text/html; boundary="---123456789"
+---123456789
+Content-Transfer-Encoding: text
+
+test mail.

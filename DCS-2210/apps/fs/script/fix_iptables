@@ -1,0 +1,4 @@
+mount -t jffs2 -n -o rw,remount /dev/mtdblock4 /
+ln -s /opt/ipnc/lib /lib/iptables
+mount -t jffs2 -n -o ro,remount /dev/mtdblock4 /
+

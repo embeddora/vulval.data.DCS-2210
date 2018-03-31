@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<title>D-LINK CORPORATION | INTERNET CAMERA | TEST</title>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<script language="javascript" src="/var.js" ></script>
+<script language="javascript" src="/common.js" ></script>
+<script language="javascript" src="/setInnerHTML.js" ></script>
+<body>
+<script>
+var c_iniUrl = "/vb.htm?language=ie";
+var g_SubmitHttp;
+function SendHttp(url,isAsync,callBack)
+{
+  isAsync = new Boolean(isAsync);
+  g_SubmitHttp = null;
+  g_SubmitHttp = InitXHttp();
+  if (callBack != null)
+  {
+    g_SubmitHttp.onreadystatechange = callBack;
+  }
+  else
+  {
+    g_SubmitHttp.onreadystatechange = OnSubmitReadyStateProcess;
+  }
+  
+  try
+  {
+    g_SubmitHttp.open("GET", url, isAsync);
+    g_SubmitHttp.setRequestHeader("If-Modified-Since","0");
+    g_SubmitHttp.send(null);
+    WS('sending');
+  }catch(e){};
+};
+
+var myTime = 120;
+function FirmwareUpgrade()
+{
+  SendHttp(c_iniUrl+"&getmachinecode",false,SendStatusOK);
+};
+var timer = null;
+var timerId = null;
+
+function SendStatusOK()
+{
+  if(g_SubmitHttp.readyState==4)
+  {
+    if(g_SubmitHttp.status==200)
+    {
+      try
+      {
+        var txt=g_SubmitHttp.responseText;
+		timer = setTimeout("FirmwareUpgrade()",1000);
+	  }
+	  catch (e){};   
+    }
+	else
+	{
+	  ShowDLinkWarning('wait :'+myTime);
+      myTime --;
+      if (myTime > 0)
+      {
+        timerId = setTimeout("Message()",1000);
+	  }
+    }	  
+  }
+};
+
+function Message()
+{
+  ShowDLinkWarning('wait :'+myTime);
+  myTime --;
+  if (myTime > 0)
+  {
+    timerId = setTimeout("Message()",1000);
+  }  
+  else
+  {
+    window.location.href='http://'+location.host;
+  }
+};
+
+function ShowDLinkWarning(warningHTML)
+{
+  var obj = GE("show");
+  if(obj != null)
+    obj.innerHTML = warningHTML;
+};
+
+function MY_ONLOAD()                                                                  
+{
+  imgFetcher.RunDms();
+  g_lockLink = false;
+};
+
+function DW(str)
+{
+  document.write(str);
+};
+
+// get object from id
+function GE(name)
+{
+  return document.getElementById(name);
+};
+
+function FirmwareUpgradeTxt()
+{
+  var o='';
+  o+='<table width="525" border="0" cellpadding="2" cellspacing="2" height="14" ><tr>';
+  o+='<td><form NAME="my_form" action="/update.cgi" method="post" enctype="multipart/form-data" >Firmware file path :<input id="upfile" name="upfile" type="file" ><input type="submit" value="upload" onClick="FirmwareUpgrade();" ></form></td>';
+  o+='</tr></table><div id="show"></div>';
+  o+='<table><tr><td>';
+  o+=imgFetcher.GetDmsImgStr(360,240);
+  o+='</td></tr></table>';
+  return o;
+};
+
+DW(FirmwareUpgradeTxt());
+ALC();
+</script>
+</body>
+</html>
